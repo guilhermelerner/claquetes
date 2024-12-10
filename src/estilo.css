@@ -1,0 +1,203 @@
+/* estilo.css */
+body {
+    margin: 0; /* Remove margens do corpo */
+    padding: 0; /* Remove preenchimento do corpo */
+    height: 100vh; /* Garante que o corpo ocupe a altura total da tela */
+    background-image: url('./imagens/Desktop - 11.jpg'); /* Substitua pelo caminho correto da sua imagem */
+    background-size: cover; /* Faz a imagem cobrir toda a tela */
+    background-position: center; /* Centraliza a imagem */
+}
+
+html {
+    height: 100%; /* Garante que o html ocupe 100% da altura */
+    width: 100%; /* Garante que o html ocupe 100% da largura */
+}
+
+.container {
+    display: flex; /* Usar flexbox para layout */
+    width: 100%;
+    height: 100%; /* Garante que o contêiner ocupe 100% da altura */
+    flex-direction: column; /* Alinha os itens em coluna */
+}
+
+.sidebar {
+    width: 200px; /* Largura da barra lateral */
+    background-color: #03203d; /* Cor de fundo do menu lateral */
+    padding: 10px; /* Espaçamento interno */
+    border-right: 1px solid #ccc; /* Borda à direita */
+}
+
+.sidebar a {
+    display: block; /* Cada link ocupa uma linha */
+    color: #ecf0f1; /* Cor das letras do menu lateral */
+    text-decoration: none; /* Remove o sublinhado */
+    padding: 10px; /* Espaçamento interno dos links */
+    margin: 5px 0; /* Margem entre os links */
+    transition: background-color 0.3s; /* Transição suave para a cor de fundo */
+}
+
+.sidebar a:hover {
+    background-color: #03274b; /* Cor de fundo ao passar o mouse */
+}
+
+.sidebar button {
+    display: block; /* Cada botão ocupa uma linha */
+    width: 100%; /* Botões ocupam toda a largura */
+    padding: 10px; /* Espaçamento interno dos botões */
+    margin: 5px 0; /* Margem entre os botões */
+    cursor: pointer; /* Cursor de ponteiro ao passar o mouse */
+    background-color: #007bff; /* Cor de fundo dos botões */
+    color: white; /* Cor do texto dos botões */
+    border: none; /* Sem borda */
+    border-radius: 5px; /* Bordas arredondadas */
+}
+
+.sidebar button:hover {
+    background-color: #0056b3; /* Cor de fundo ao passar o mouse */
+}
+
+header {
+    display: flex;
+    justify-content: space-between; /* Espaça os itens do cabeçalho */
+    align-items: center; /* Alinha os itens verticalmente */
+    font-size: 35px;
+    height: 60px;
+    width: 100%; /* Garante que o cabeçalho ocupe 100% da largura */
+    background-color: rgba(255, 255, 255, 0.8); /* Cor de fundo com opacidade */
+    color: #03043a;
+    padding: 0 20px; /* Espaçamento interno */
+    margin: 0; /* Remove margens */
+    position: fixed; /* Fixa o cabeçalho no topo */
+    top: 0; /* Alinha o cabeçalho ao topo da página */
+    left: 0; /* Alinha o cabeçalho à esquerda da página */
+    z-index: 1000; /* Garante que o cabeçalho fique acima de outros elementos */
+}
+
+.header-content {
+    display: flex;
+    align-items: center;
+}
+
+.claquete-img {
+    width: 40px; /* Ajuste o tamanho conforme necessário */
+    height: 40px; /* Ajuste o tamanho conforme necessário */
+    margin-right: 5px; /* Espaço entre a imagem e o texto */
+}
+
+.barra-pesquisa {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    width: 100%; /* Faz a barra de pesquisa ocupar 100% da largura */
+    margin-top: 60px; /* Espaço para não ficar atrás do cabeçalho fixo */
+}
+
+.barra-pesquisa input {
+    width: 100%; /* Faz o input ocupar 100% da largura da barra de pesquisa */
+    max-width: 600px; /* Limita a largura máxima do input para não ficar muito largo */
+    height: 40px;
+    padding: 10px;
+    font-size: 18px;
+    border: none;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.main-content {
+    flex: 1; /* O conteúdo principal ocupa o restante do espaço */
+    padding: 20px; /* Espaçamento interno do conteúdo principal */
+    margin-top: 20px; /* Espaço acima do conteúdo principal */
+    text-align: center; /* Centraliza o texto dentro do conteúdo principal */
+}
+
+.filmes-laterais {
+    display: flex;
+    flex-wrap: wrap; /* Permite que os filmes se ajustem em várias linhas */
+    justify-content: center; /* Centraliza os filmes na linha */
+    width: 100%; /* Garante que ocupe toda a largura */
+}
+
+.filme-lateral {
+    width: 45%; /* Largura dos filmes */
+    text-align: center; /* Centraliza o texto dentro de cada filme */
+    margin: 1px; /* Margem entre os filmes */
+}
+
+.filme-lateral img {
+    width: auto; /* Mantém a largura automática */
+    height: 300px; 
+    border-radius: 8px; /* Bordas arredondadas para as imagens */
+}
+
+.titulo {
+    color: #FFFFFF; /* Cor do texto da sinopse */
+    font-size: 20px;
+    margin: 10px 0;
+}
+
+.sinopse {
+    color: #FFFFFF; /* Cor do texto da sinopse */
+    text-align: center;
+    padding: 10px;
+}
+
+.welcome-message {
+    text-align: center;
+    margin: 20px 0;
+}
+
+.welcome-message h2 {
+    font-size: 45px;
+    color: #ffffff;
+}
+
+.welcome-message p {
+    font-size: 35px;
+    color: #ffffff;
+}
+
+.login-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Centraliza horizontalmente */
+    justify-content: center; /* Centraliza verticalmente */
+    height: 100vh; /* Ocupa toda a altura da tela */
+    background-color: #f9f9f9; /* Cor de fundo clara */
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra para dar profundidade */
+    border-radius: 8px; /* Bordas arredondadas */
+}
+
+.login-container h2 {
+    margin-bottom: 20px; /* Espaço abaixo do título */
+}
+
+.form-group {
+    margin-bottom: 15px; /* Espaço entre os campos do formulário */
+}
+
+.form-group label {
+    display: block; /* Faz o label ocupar toda a largura */
+    margin-bottom: 5px; /* Espaço abaixo do label */
+}
+
+.form-group input {
+    width: 100%; /* Faz o input ocupar toda a largura do container */
+    padding: 10px; /* Espaço interno do input */
+    border: 1px solid #ccc; /* Borda do input */
+    border-radius: 4px; /* Bordas arredondadas */
+}
+
+button {
+    padding: 10px 15px; /* Espaço interno do botão */
+    background-color: #007bff; /* Cor de fundo do botão */
+    color: white; /* Cor do texto do botão */
+    border: none; /* Remove a borda padrão */
+    border-radius: 4px; /* Bordas arredondadas */
+    cursor: pointer; /* Muda o cursor ao passar sobre o botão */
+}
+
+button:hover {
+    background-color: #0056b3; /* Cor do botão ao passar o mouse */
+}

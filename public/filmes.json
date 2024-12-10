@@ -1,0 +1,38 @@
+[
+    {
+      "id": 1,
+      "titulo": "Um Sonho de Liberdade ",
+      "posterUrl": "/imagens/image.jpg"
+      
+    },
+    {
+      "id": 2,
+      "titulo": "O Poderoso Chefão",
+      "posterUrl": "/imagens/image-1.jpg"
+      
+    },
+    {
+      "id": 3,
+      "titulo": "Clube da Luta",
+      "posterUrl": "/imagens/image.png"
+      
+    },
+    {
+      "id": 4,
+      "titulo": "Wicked",
+      "posterUrl": "/imagens/image-4.png"
+      
+    },
+    {
+      "id": 5,
+      "titulo": "Moana 2",
+      "posterUrl": "/imagens/image-5.png"
+      
+    },
+    {
+      "id": 6,
+      "titulo": "Ainda estou Aqui",
+      "posterUrl": "/imagens/image-6.png"
+      
+    }
+  ]
